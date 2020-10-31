@@ -6,7 +6,7 @@ import java.lang.annotation.*;
 
 @Documented
 @Constraint(validatedBy = NotEmptyIfPresentValidator.class)
-@Target( { ElementType.FIELD, ElementType.PARAMETER, ElementType.METHOD })
+@Target( { ElementType.FIELD, ElementType.PARAMETER })
 @Retention(RetentionPolicy.RUNTIME)
 public @interface NotEmptyIfPresent {
 

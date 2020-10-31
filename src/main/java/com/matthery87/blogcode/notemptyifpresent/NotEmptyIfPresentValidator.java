@@ -25,7 +25,7 @@ public class NotEmptyIfPresentValidator implements ConstraintValidator<NotEmptyI
 
             String string = (String) object;
 
-            return !string.isEmpty();
+            return !string.trim().isEmpty();
         }
 
         return true;
